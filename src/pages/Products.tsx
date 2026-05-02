@@ -58,26 +58,6 @@ export default function Products() {
             <ProductCard key={p.title} {...p} />
           ))}
         </div>
-
-        <div className="bg-card border border-card-border rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-3">Bundle and save</h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Get the full suite at a significant discount compared to buying separately. Most teams expand to more modules within their first year.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <div className="bg-background border border-border rounded-xl p-5 text-left min-w-48">
-              <p className="text-sm font-medium text-muted-foreground mb-1">Per module</p>
-              <p className="text-3xl font-bold text-foreground">$29<span className="text-base font-normal text-muted-foreground">/mo</span></p>
-              <p className="text-xs text-muted-foreground mt-1">per 10 users</p>
-            </div>
-            <div className="bg-primary text-white rounded-xl p-5 text-left min-w-48 relative">
-              <Badge className="absolute top-3 right-3 bg-white/20 text-white border-0 text-xs">Best value</Badge>
-              <p className="text-sm font-medium text-white/70 mb-1">Full suite</p>
-              <p className="text-3xl font-bold">$89<span className="text-base font-normal text-white/70">/mo</span></p>
-              <p className="text-xs text-white/70 mt-1">all products, per 10 users</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

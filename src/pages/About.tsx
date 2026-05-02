@@ -18,12 +18,12 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2019", event: "VectorEdge founded — first engineering team assembled in San Francisco" },
-  { year: "2020", event: "Sales Admin (CRM) v1.0 shipped to first 50 business customers" },
-  { year: "2021", event: "HRMS launched — 500 companies onboarded, Series A funding closed" },
-  { year: "2022", event: "Email Support Tool released — recognised for software quality and UX" },
-  { year: "2023", event: "Recruitment Module launched — 1,000+ customers across the full product suite" },
-  { year: "2024", event: "2,400+ companies. Global infrastructure. Continuous delivery at scale." },
+  { year: "2022", event: "VectorEdge founded — first engineering team assembled" },
+  { year: "2022", event: "Sales Admin (CRM) v1.0 shipped to first 2 business customers" },
+  { year: "2022", event: "HRMS launched — 2 companies onboarded, Series A funding closed" },
+  { year: "2023", event: "Email Support Tool released — recognised for software quality and UX" },
+  { year: "2023", event: "Recruitment Module launched — 5 customers across the full product suite" },
+  { year: "2024", event: "5+ companies. Global infrastructure. Continuous delivery at scale." },
 ];
 
 export default function About() {
@@ -92,7 +92,7 @@ export default function About() {
         </div>
 
         {/* Team */}
-        <div>
+        {/* <div>
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">The team behind VectorEdge</h2>
             <p className="text-muted-foreground text-sm">Engineers, designers, and builders who believe software should be a competitive advantage for every business.</p>
@@ -111,7 +111,7 @@ export default function About() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
