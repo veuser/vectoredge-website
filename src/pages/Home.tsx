@@ -130,104 +130,13 @@ export default function Home() {
               </Button>
             </div>
 
-            {/* Hero dashboard mockup */}
-            <div className="relative mx-auto max-w-5xl">
-              <div className="rounded-2xl border border-gray-200 shadow-2xl shadow-gray-200/80 overflow-hidden bg-gray-50">
-                {/* Browser bar */}
-                <div className="flex items-center gap-2 px-4 py-3 bg-white border-b border-gray-100">
-                  <div className="flex gap-1.5">
-                    <div className="w-3 h-3 rounded-full bg-red-400" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                    <div className="w-3 h-3 rounded-full bg-green-400" />
-                  </div>
-                  <div className="flex-1 mx-4 bg-gray-100 rounded-md px-3 py-1 text-xs text-gray-400 text-left">
-                    app.novasuite.io/dashboard
-                  </div>
-                </div>
-                {/* Fake dashboard content */}
-                <div className="p-5 grid grid-cols-4 gap-4">
-                  {[
-                    { label: "Deals Closed", value: "126", trend: "+18.2%", up: true },
-                    { label: "Active Deals", value: "247", trend: "+5.1%", up: true },
-                    { label: "Support Tickets", value: "34", trend: "-12%", up: false },
-                    { label: "Open Positions", value: "7", trend: "+2", up: true },
-                  ].map(({ label, value, trend, up }) => (
-                    <div key={label} className="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                      <p className="text-xs text-gray-400 mb-1">{label}</p>
-                      <p className="text-2xl font-bold text-gray-900">{value}</p>
-                      <p className={`text-xs mt-1 font-medium ${up ? "text-emerald-600" : "text-red-500"}`}>{trend} this month</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="px-5 pb-5 grid grid-cols-3 gap-4">
-                  <div className="col-span-2 bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                    <div className="flex items-center justify-between mb-3">
-                      <p className="text-sm font-semibold text-gray-700">Sales Pipeline</p>
-                      <Badge variant="secondary" className="text-xs">Q2 2025</Badge>
-                    </div>
-                    <div className="flex gap-2 items-end h-20">
-                      {[40, 65, 45, 80, 55, 70, 90].map((h, i) => (
-                        <div key={i} className="flex-1 rounded-t-sm bg-gradient-to-t from-blue-500 to-blue-400 opacity-80" style={{ height: `${h}%` }} />
-                      ))}
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                    <p className="text-sm font-semibold text-gray-700 mb-3">Team Status</p>
-                    <div className="space-y-2">
-                      {[{ name: "Sales", pct: 78, color: "bg-blue-500" }, { name: "Support", pct: 92, color: "bg-teal-500" }, { name: "HR", pct: 64, color: "bg-violet-500" }].map(({ name, pct, color }) => (
-                        <div key={name}>
-                          <div className="flex justify-between text-xs text-gray-500 mb-0.5">
-                            <span>{name}</span><span>{pct}%</span>
-                          </div>
-                          <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                            <div className={`h-full ${color} rounded-full`} style={{ width: `${pct}%` }} />
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Floating badges */}
-              <div className="absolute -left-6 top-1/3 bg-white border border-gray-100 shadow-lg rounded-xl px-4 py-3 hidden lg:flex items-center gap-3">
-                <div className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center">
-                  <TrendingUp className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Deals closed</p>
-                  <p className="text-sm font-bold text-gray-900">+30% MoM</p>
-                </div>
-              </div>
-              <div className="absolute -right-6 bottom-1/3 bg-white border border-gray-100 shadow-lg rounded-xl px-4 py-3 hidden lg:flex items-center gap-3">
-                <div className="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center">
-                  <Users className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">New hires</p>
-                  <p className="text-sm font-bold text-gray-900">12 this week</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Stats bar */}
-      <section className="border-y border-gray-100 bg-gray-50/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-200">
-            {stats.map(({ label, value }) => (
-              <div key={label} className="text-center px-4" data-testid={`stat-${label.toLowerCase().replace(/\s+/g, "-")}`}>
-                <p className="text-3xl font-extrabold text-gray-900 tracking-tight">{value}</p>
-                <p className="text-sm text-gray-500 mt-1">{label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* Products */}
-      <section className="py-24 bg-white">
+      <section className=" bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <Badge variant="secondary" className="mb-4 bg-blue-50 text-blue-700 border-blue-100">Our Products</Badge>
