@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <Badge variant="secondary" className="mb-4 bg-emerald-50 text-emerald-700 border-emerald-100">Customer Stories</Badge>
@@ -232,7 +232,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-24 mx-4 sm:mx-8 lg:mx-16 mb-16 rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 relative overflow-hidden">
